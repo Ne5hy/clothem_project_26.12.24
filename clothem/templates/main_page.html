@@ -1,0 +1,72 @@
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monoton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body style="height: 200vh;">
+    <a href="/about-us"><div style="width: 4.5%; height: 2%; position: absolute; right: 1.5%; top: 3%; color: white; font-size: 90%; font-family: Inter; font-weight: 300; word-wrap: break-word">about us</div></a>
+
+    <a href="/"><div style="width: 30%; height: 158px; right: 34%; top: 0px; position: absolute; color: white; font-size: 400%; font-family: Monoton; font-weight: 400%; word-wrap: break-word">clothem</div></a>
+    <div class="UnderlineText" style="width: 20%; height: 158px; right: 40%; top: 13%; position: absolute; color: white; font-size: 125%; font-family: Inter; font-weight: 400; word-wrap: break-word">Find clothes from pictures.</div>
+
+
+    <div style="width: 70%; height: 70%; left: 15%; bottom: 0px; position: absolute; border-top-left-radius: 80px; border-top-right-radius: 80px; border-left: 7px white solid; border-top: 7px white solid; border-right: 7px white solid"></div>
+    <div style="width: 68%; height: 68%; left: 16%; bottom: 0px; position: absolute; border-top-left-radius: 66px; border-top-right-radius: 66px; border-left: 7px white solid; border-top: 7px white solid; border-right: 7px white solid"></div>
+    <div style="width: 66%; height: 66%; left: 17%; bottom: 0px; position: absolute; border-top-left-radius: 52px; border-top-right-radius: 52px; border-left: 7px white solid; border-top: 7px white solid; border-right: 7px white solid"></div>
+    <div style="width: 64%; height: 64%; left: 18%; bottom: 0px; position: absolute; background: white; border-top-left-radius: 38px; border-top-right-radius: 38px; border-left: 7px white solid; border-top: 7px white solid; border-right: 7px white solid;"></div>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input id="file_upload" type="file" name="file_upload" accept=".png, .jpg, .jpeg" style="opacity: 0" required/>
+        <button id="file_submit" class="text-white bg-blue-500 px-4 py-2 rounded-md my=4" style=" opacity: 1;" type="submit">Submit</button>
+    </form>
+    <div style="width: 11.5%; height: 0.75%; left: 44.5%; bottom: 29%; position: absolute; background: #4F6C84"></div>
+    <div style="width: 11.5%; height: 0.75%; left: 44.5%; bottom: 30.5%; position: absolute; background: #4F6C84"></div>
+    <div style="width: 11.5%; height: 0.75%; left: 44.5%; bottom: 32%; position: absolute; background: #4F6C84"></div>
+    <div style="width: 11.5%; height: 0.75%; left: 44.5%; bottom: 33.5%; position: absolute; background: #4F6C84"></div>
+
+    <div  style="width: 4.5%; height: 0.75%; left: 49.5%; bottom: 41.5%; position: absolute; transform: rotate(90deg); transform-origin: 0 0; background: #4F6C84"></div>
+    <div  style="width: 4.5%; height: 0.75%; left: 50.25%; bottom: 41.5%; position: absolute; transform: rotate(90deg); transform-origin: 0 0; background: #4F6C84"></div>
+    <div  style="width: 4.5%; height: 0.75%; left: 51%; bottom: 41.5%; position: absolute; transform: rotate(90deg); transform-origin: 0 0; background: #4F6C84"></div>
+    <div  style="width: 4.5%; height: 0.75%; left: 51.75%; bottom: 41.5%; position: absolute; transform: rotate(90deg); transform-origin: 0 0; background: #4F6C84"></div>
+    <div  style="width: 4%; height: 0.75%; left: 49.5%; bottom: 28.25%; position: absolute; transform: rotate(90deg); transform-origin: 0 0; background: #4F6C84"></div>
+    <div  style="width: 4%; height: 0.75%; left: 50.25%; bottom: 28.25%; position: absolute; transform: rotate(90deg); transform-origin: 0 0; background: #4F6C84"></div>
+    <div  style="width: 4%; height: 0.75%; left: 51%; bottom: 28.25%; position: absolute; transform: rotate(90deg); transform-origin: 0 0; background: #4F6C84"></div>
+    <div  style="width: 4%; height: 0.75%; left: 51.75%; bottom: 28.25%; position: absolute; transform: rotate(90deg); transform-origin: 0 0; background: #4F6C84"></div>
+
+    <div  style="width: 25%; height: 8%; position: absolute; top: 0%; left: 0%; background: #4F6C84"></div>
+
+
+    <label for="file_upload" style="width: 35%; height: 8%; left: 32.5%; bottom: 49%; position: absolute; color: #4F6C84; font-size: 300%; font-family: Monoton; font-weight: 400; word-wrap: break-word">upload  the  file</label>
+    <label for="file_submit" style="width: 40%; height: 8%; left: 30%; bottom: 9%; position: absolute; color: #4F6C84; font-size: 300%; font-family: Monoton; font-weight: 400; word-wrap: break-word">start the search</label>
+    <section style="position: relative; top: 100vh;">
+        <div style="width: 100%; background: #4F6C84;"></div>
+        <a href="/"><div style="width: 30%; height: 158px; right: 34%; top: 0; position: absolute; color: white; font-size: 400%; font-family: Monoton; font-weight: 400%; word-wrap: break-word">clothem</div></a>
+        <div style="width: 83.5%; height: 70%; right: 8.25%; top: 30vh; position: absolute; color: white; font-size: 100%; font-family: Inter; font-weight: 800; word-wrap: break-word">Добро пожаловать в мир стильной и удобной одежды с CLOTHEM! Мы – команда, объединившаяся в стремлении упростить поиск идеального наряда для каждого. Наша миссия заключается в том, чтобы помочь вам находить одежду по фотографиям, которые вдохновляют.
+            <br/>
+            <br/>Мы понимаем, как важно одеваться по настроению и обстоятельствам, и как трудно бывает найти именно то, что вам нужно. Поэтому мы разработали уникальный сервис, который позволяет вам загрузить фото и получить рекомендации по похожим предметам одежды из различных коллекций.
+            <br/>
+            <br/>Мы гордимся тем, что предлагаем не только удобный поиск, но и широкий выбор стильных решений на любой вкус. Наша команда постоянно работает над тем, чтобы обновлять ассортимент и включать самые актуальные тренды.
+            <br/>
+            <br/>Присоединяйтесь к нашему сообществу модных искателей! Следите за нами в социальных сетях, делитесь своими находками и вдохновляйтесь идеями от остальных пользователей. Мы здесь, чтобы помочь вам раскрыть свой стиль и сделать процесс шопинга более увлекательным и простым.</div>
+        <div style="width: 7%; height: 158px; right: 46.5%; top: 13vh; position: absolute; color: white; font-size: 125%; font-family: Inter; font-weight: 400; word-wrap: break-word">About us.</div>
+        <a href="/"><div style="width: 5.5%; height: 2%; position: absolute; right: 1.5%; top: 3vh; color: white; font-size: 90%; font-family: Inter; font-weight: 300; word-wrap: break-word">main page</div></a>
+    
+        <div style="width: 15%; height: 15%; left: 9%; top: 77.5vh; position: absolute; color: white; font-size: 100%; font-family: Inter; font-weight: 200; word-wrap: break-word">Авторы: <br/>Болотин Захар<br/>Жуков Владислав<br/>Шифрин Александр</div>
+        <div style="width: 15%; height: 15%; right: 9%; top: 77.5vh; position: absolute; color: white; font-size: 100%; font-family: Inter; font-weight: 200; word-wrap: break-word">Наши контакты: <br/>cloth3m@gmail.com<br/>@clothem<br/>+7-777-777-77-77</div>
+    </section>
+</body>
+</html>

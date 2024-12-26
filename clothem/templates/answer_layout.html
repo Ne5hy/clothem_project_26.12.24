@@ -1,0 +1,38 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Answer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monoton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static '/main.css' %}">
+
+</head>
+<body>
+    <div style="width: 90%; height: 87%; left: 5%; bottom: 0px; position: fixed; border-top-left-radius: 80px; border-top-right-radius: 80px; border-left: 7px white solid; border-top: 7px white solid; border-right: 7px white solid"></div>
+    <div style="width: 88%; height: 85%; left: 6%; bottom: 0px; position: fixed; border-top-left-radius: 66px; border-top-right-radius: 66px; border-left: 7px white solid; border-top: 7px white solid; border-right: 7px white solid"></div>
+    <div style="width: 86%; height: 83%; left: 7%; bottom: 0px; position: fixed; border-top-left-radius: 52px; border-top-right-radius: 52px; border-left: 7px white solid; border-top: 7px white solid; border-right: 7px white solid"></div>
+    <div style="width: 84%; height: 81%; left: 8%; bottom: 0px; position: fixed; background: white; border-top-left-radius: 38px; border-top-right-radius: 38px; border-left: 7px white solid; border-top: 7px white solid; border-right: 7px white solid;"></div>
+
+
+    <img 
+    style="position: fixed; width: 80%; height: 60%; object-fit: contain; left: 50%; top: 25%; transform: translateX(-50%);"
+    src="{{ image }}" alt="">
+
+    <div style="width: 100%; height: 5%; left: 47.5%; top: 90%; position: fixed; font-weight: 200; font-size: 150%; color: #4F6C84; font-family: Inter; word-wrap: break-word;">{{ label }}</div>
+
+    <a href="/"><div style="width: 19%; height: 5%; position: fixed; left: 2%; top: 1.5%; color: white; font-size: 275%; font-family: Monoton; font-weight: 400; word-wrap: break-word">clothem</div></a>
+    <a href="/"><div style="width: 4.5%; height: 2%; position: fixed; right: 1.5%; top: 3%; color: white; font-size: 90%; font-family: Inter; font-weight: 300; word-wrap: break-word">about us</div></a>
+
+</body>
+</html>

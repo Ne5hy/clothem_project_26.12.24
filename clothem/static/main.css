@@ -1,0 +1,10 @@
+body {
+   background: #4F6C84;
+}
+
+.FileUpload {
+opacity: 0;
+position: relative;
+z-index: 1;
+}
+
